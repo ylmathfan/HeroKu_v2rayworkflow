@@ -11,7 +11,7 @@ cat << EOF > /etc/v2ray/config.json
                 "downlinkOnly": 5,
                 "statsUserUplink": false,
                 "statsUserDownlink": false,
-                "bufferSize": 10240
+                "bufferSize": 5120
             }
         },
         "system": {
@@ -24,7 +24,7 @@ cat << EOF > /etc/v2ray/config.json
     "inbounds": [
         {
             "port": $PORT,
-            "protocol": "vless",
+            "protocol": "vmess",
             "settings": {
                 "clients": [
                     {
